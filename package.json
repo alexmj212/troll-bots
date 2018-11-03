@@ -1,0 +1,25 @@
+{
+  "name": "trollbots",
+  "version": "1.0.0",
+  "description": "Troll Slack Bots",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexmj212/troll-bots.git"
+  },
+  "keywords": [
+    "node",
+    "slack",
+    "bots",
+    "troll"
+  ],
+  "author": "Alex Johnson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexmj212/troll-bots/issues"
+  },
+  "homepage": "https://github.com/alexmj212/troll-bots#readme"
+}
