@@ -23,6 +23,9 @@
   },
   "homepage": "https://github.com/alexmj212/troll-bots#readme",
   "dependencies": {
+    "@slack/client": "^4.8.0",
+    "@slack/events-api": "^2.1.1",
+    "@slack/interactive-messages": "^1.0.2",
     "body-parser": "^1.18.3",
     "express": "^4.16.4"
   }
