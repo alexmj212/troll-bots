@@ -4,7 +4,13 @@
   "description": "Troll Slack Bots",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "nodemon --inspect ./dist/index.js",
+    "watch": "concurrently -k -n tsc,server \"npm run watch-ts\" \"npm run start\"",
+    "build": "npm run lint; npm run build-ts",
+    "build-ts": "tsc",
+    "watch-ts": "tsc -w",
+    "lint": "tslint -c tslint.json -p tsconfig.json"
   },
   "repository": {
     "type": "git",
@@ -27,6 +33,16 @@
     "@slack/events-api": "^2.1.1",
     "@slack/interactive-messages": "^1.0.2",
     "body-parser": "^1.18.3",
+    "dotenv": "^6.1.0",
     "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "concurrently": "^4.0.1",
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.6"
+  },
+  "nodemonConfig": {
+    "ignore": ["src/**", "package.json"],
+    "delay": "2500"
   }
 }
